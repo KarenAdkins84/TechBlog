@@ -25,6 +25,11 @@ Dotenv
 ### Installation && Usage
 To start, run npm i in the integrated terminal, sign into mysql with credentials and run schema.sql to set up database, exit mysql and run npm start to open page on the browser.
 
+
+### Screenshots
+![image](./assets/Screenshot%202022-11-09%20105533.png)
+![image](./assets/Screenshot%202022-11-09%20111255.png)
+
 ### Screencastify Demo
 
 
