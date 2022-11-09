@@ -14,25 +14,9 @@ const newFormHandler = async (event) => {
         });
         
         if (response.ok) {
-        document.location.replace('/profile');
+        document.location.replace('/dashboard');
         } else {
         alert('Failed to post new blog!');
-        }
-    }
-    };
-    
-    const delButtonHandler = async (event) => {
-    if (event.target.hasAttribute('data-id')) {
-        const id = event.target.getAttribute('data-id');
-        
-        const response = await fetch(`/api/blogs/${id}`, {
-        method: 'DELETE',
-        });
-        
-        if (response.ok) {
-        document.location.replace('/profile');
-        } else {
-        alert('Failed to delete blog!');
         }
     }
     };
@@ -40,7 +24,3 @@ const newFormHandler = async (event) => {
     document
         .querySelector('.new-blog-form')
         .addEventListener('submit', newFormHandler);
-    
-    document
-        .querySelector('.blog-list')
-        .addEventListener('click', delButtonHandler);
