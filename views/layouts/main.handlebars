@@ -9,11 +9,12 @@
 </head>
 
 <body>
-    <header>
+    <header class="container row display-flex">
         <nav>
+            <a href="/dashboard">Dashboard</a> |
+            <a href="/homepage">Homepage</a> |
             <!-- Conditionally render login or logout links -->
             {{#if logged_in}}
-            <a href="/dashboard">Dashboard</a> |
             <button class="button" id="logout">Logout</button>
             {{else}}
             <a href="/login">Login</a>

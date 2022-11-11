@@ -1,2 +1,21 @@
 DROP DATABASE IF EXISTS blog_db;
-CREATE DATABASE blog_db
+CREATE DATABASE blog_db;
+
+USE blog_db;
+
+CREATE TABLE user (
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    name STRING NOT NULL,
+    email STRING NOT NULL,
+    password STRING NOT NULL
+);
+
+CREATE TABLE blog (
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    name STRING NOT NULL,
+    description STRING NOT NULL,
+    date_created DATE NOW NOT NULL
+    FOREIGN KEY (user_id)
+    REFERENCES user(id)
+
+);
