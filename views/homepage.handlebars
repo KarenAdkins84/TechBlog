@@ -1,9 +1,10 @@
+<h2>Please login or register to post blogs or leave comments! Thanks for visiting!</h2>
 <!-- Loop over each object in the blog array -->
-{{#each blog as |blog| }}
-<div class="row mb-4 blog">
+{{#each blogs as |blog| }}
+<div class="row mb-4 blog" id="blog">
     <div class="col-md-5">
     <h2>
-        <a href="/blog/{{blog.id}}">{{blog.name}}</a>
+        {{blog.name}}
     </h2>
     <p>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
     </div>
@@ -14,3 +15,5 @@
     </div>
 </div>
 {{/each}}
+
+{{!-- <script src="/js/homepage.js"></script> --}}

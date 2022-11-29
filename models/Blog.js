@@ -35,7 +35,7 @@ Blog.init(
     {
         sequelize,
         timestamps: false,
-        freezeTableTime: true,
+        freezeTableName: true,
         underscored: true,
         modelName: 'blog',
     }

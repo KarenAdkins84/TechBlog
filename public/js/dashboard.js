@@ -14,7 +14,7 @@ const newFormHandler = async (event) => {
         });
         
         if (response.ok) {
-        document.location.replace('/dashboard');
+        document.location.replace('/');
         } else {
         alert('Failed to post new blog!');
         }
@@ -22,5 +22,5 @@ const newFormHandler = async (event) => {
     };
     
     document
-        .querySelector('.new-blog-form')
-        .addEventListener('submit', newFormHandler);
+        .querySelector('.postBtn')
+        .addEventListener('click', newFormHandler);
