@@ -27,11 +27,14 @@ To start, run npm i in the integrated terminal, sign into mysql with credentials
 
 
 ### Screenshots
-![image](./assets/Screenshot%202022-11-09%20105533.png)
-![image](./assets/Screenshot%202022-11-09%20111255.png)
-
+![image](./assets/screenshot1.png)
+![image](./assets/screenshot2.png)
+![image](./assets/screenshot3.png)
 ### Screencastify Demo
 
 
 ### Github Repo
 (https://github.com/KarenAdkins84/TechBlog)
+
+### Deployed Application
+
