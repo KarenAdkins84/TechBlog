@@ -23,7 +23,6 @@
   "engines": {
     "node": "14.17.3"
   },
-  
   "devDependencies": {},
   "repository": {
     "type": "git",
